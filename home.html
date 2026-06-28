@@ -1,0 +1,537 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="password" id="pass">
+    <input type="checkbox"onclick="pass.type=this.checked? 'text':'password'">
+    <script>
+        // var image = document.createElement("img")
+        // image.src="image/img/h1.jpg";
+        // document.body.appendChild(image);
+    </script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #000;
+            overflow: hidden;
+            perspective: 1000px;
+        }
+        .container{
+            position: relative;
+            width: 100%;
+            display: flex;
+            transform-style: preserve-3d;
+        }
+        .circle{
+            position: absolute;
+            background: transparent;
+            width: calc(var(--i)*2.5vmin);
+            aspect-ratio: 1;
+            border-radius: 50%;
+            bottom: 3px solid rgb(0,255.13);
+            transform-style: preserve-3d;
+            transform: rotateX(70deg)translateZ(50px);
+            animation: animate 3s ease-in-out infinite;
+            animation-delay: calc(var(--i)*0.08s);
+            box-shadow: 0 5px 15px rgba(0, 255, 13, 0.5);
+            inset: 0 5px 15px rgba(0, 255, 13, 0.5);
+
+        }
+        @keyframes animate {
+            0%,100%{
+                transform: rotateX(70deg) translateZ(50px)  translateY(0);
+                filter: hue-rotate(0deg);
+
+            }
+            50%{
+                transform: rotateX(70deg) translateZ(50px)  translateY(-50vmin);
+                filter: hue-rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="vortex"></div>
+    <script>
+        const container=document.getElementById("vortex");
+        for (let i = 0; i <= 20; i++) {
+            const circle = document.createElement("div");
+            circle.className='circle';
+
+            circle.style.setProperty('--i',i);
+            container.appendChild(circle);
+            
+        }
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          *{
+            padding: 0;margin: 0;
+            box-sizing: border-box;
+
+        }
+       
+        html,body{
+            line-height: 1.4;
+            font-weight: 300;
+
+        }
+        
+        .n{
+                display: flex;
+               margin: 20px;
+        }
+        li{
+            padding:  0px 15px;
+            text-decoration: none;
+            list-style:none ;
+        }
+        #logo img{
+            border-radius: 200%;
+            
+        }
+         .col{
+            color: black;
+            font-weight: 800;
+            font-style: italic;
+        }
+        li a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-size: larger;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }a:hover{
+            color:rgba(255, 15, 15, 0.911);
+           
+        }
+        .nav{
+            box-shadow: 3px 2px 6px black;
+            position: sticky;
+            top: 0;
+            /* margin-bottom: 32px; */
+            background-color:rgba(17, 15, 15, 0.911);
+            padding:0 10px;
+            z-index: 50;
+            justify-content: space-between;
+            height:  90px;
+            color: white;
+            /* display: inline-block; */
+        }
+        .navgation{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .container{
+            max-width: 1250px;
+            text-align: center;
+            margin-left: 40px;
+        }
+        #b{
+            width: 50px;
+            height: 50px;
+            background-color:black ;
+            color: white;
+            /* margin-top: 30px; */
+        }
+        .hero{
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 90px;
+            font-size: 35px;
+        }
+        #btn{
+            margin:7% 45%;
+           padding: 12px 25px;
+           background-color:rgba(0, 0, 0, 0.911);
+           border-radius: 10px;
+           color: white;
+           font-weight: bold;
+           /* margin-bottom: 50px; */
+           margin-top: 25px;
+
+        }
+        footer{
+            background-color:rgba(7, 116, 116, 0.911);
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 10px;
+        }
+        .pp{
+            display:flex ;
+        }
+        .nn{
+            /* background-color:rgba(7, 116, 116, 0.911); */
+            font-size: larger;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 150px;
+            font-size: larger;
+        } .nn li:hover{
+            background-color:rgba(0, 0, 0, 0.911);
+            color:rgba(0, 0, 0, 0.911) ;
+            border-radius: 10px;
+            
+        }
+        #first{
+            height: 300px;
+            margin: 5px;
+            margin-left: 20px;
+            width:330px;
+            height: 150px;
+            margin-top: 10px;
+            background-repeat: no-repeat;
+            background-image: url(image/img/m1.jpg);
+         
+
+        }
+        
+        #second{
+            margin-top: -10px;
+            background-image: url(image/img/m2.jpg);
+            font-size: 20px;
+            /* height: 300px; */
+            margin: 10px;
+            margin-left: 3px;
+            width:300px;
+            height: 150px;
+            margin-top: 10px;
+            background-repeat: no-repeat;
+            text-align: center;
+         
+
+        }
+        #third{
+           
+            background-image: url(image/img/m3.jpg);
+            margin-left: 14px;
+            width:300px;
+            height: 150px;
+            margin-top: 10px;
+            background-repeat: no-repeat;
+        }
+        #four{
+          
+            background-image: url(image/img/m6.jpg);
+            height: 300px;
+            margin: 5px;
+            margin-left: 340px;
+            width:330px;
+            height: 150px;
+            margin-top:-108px;
+            background-repeat: no-repeat;
+        }
+        /* #six{
+            
+            margin-left: 210px;
+            margin-top: -110px;
+            background-image: url(image/img/m7.jpg);
+            width:200px;
+            height: 132px;
+        }
+        #seven{
+            
+            margin-left: 210px;
+            margin-top: -113px;
+            background-image: url(image/img/m8.jpg);
+            background-repeat: no-repeat;
+            width:200px;
+            height: 132px;
+        }
+        */
+
+        h2{
+            font-size: 40px;
+            color: rgba(255, 255, 255, 0.911);
+            outline: rgb(0, 0, 0);
+            margin: auto;
+            justify-content: center;
+            font-weight: bold;
+            text-align: center;
+            text-shadow: 2px 2px 2px #000000,
+            4px 4px 0px rgba(0, 0, 0, 0.2);
+            text-align: center;
+justify-content: center;
+margin-right: 20px;
+
+        }
+        .aab{
+            background-image: url(image/img/hero1.jpg);
+            background-repeat: no-repeat;
+            height: 100vh;
+            background-position: center;
+            background-size: cover;
+
+        }
+       
+        .ser input{
+            width: 200px;
+            height: 30px;
+            border-radius: 10px;
+            margin-left: 40px;
+            border: 3px solid rgb(0, 0, 0);
+        }
+        .on{
+            animation: zoom1 2s alternate ;
+            animation-delay: 0.5s;
+            transition: 0.3s;
+
+        }
+        @keyframes zoom1 {
+            from{
+                transform: scale(0.50);
+            }
+            to{
+                transform: scale(1.05);
+            }
+        }
+        .off{
+            width: 200px;
+            background-color: black;
+            color: white;
+            height: 50px;
+            justify-content: center;
+            text-align: center;
+            margin-left: 580px;
+            margin-top: 70px;
+            font-size:40px;
+            border-radius: 10px;
+            transform: scale(45deg);
+            margin-bottom: 20px;
+            animation: zoom 2s infinite ;
+            animation-delay: 0.5s;
+            transition: 0.3s;
+
+        }
+        @keyframes zoom {
+            from{
+                transform: scale(0);
+            }
+            to{
+                transform: scale(1.05);
+            }
+        }
+        .footer{
+        background-color: black;
+        color: white;
+        padding: 20PX;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+       }
+       .footer-column{
+        flex: 1;
+        margin: 10px;
+        min-height: 150px;
+       }
+       .footer-column h3{
+        border-bottom: 2px solid rgb(239, 0, 0);
+        display: inline-block;
+        margin-bottom: 10px;
+       }
+       .footer-column ul{
+        list-style: none;
+        padding: 0;
+       }
+       .footer-column ul li{
+        margin: 8px 0;
+       }
+       .footer-column ul li a{
+        text-decoration: none;
+        color: blanchedalmond;
+        transition: color o.3s;
+       }
+       .footer-column ul li a:hover{
+        color: rgb(235, 3, 3);
+       }
+       .hero1{
+            width: 250px;
+            height: 250px;
+            border: 5px solid white;
+            background-size: cover;
+            background-position: center;
+            animation: khan 5s   infinite alternate;
+            /* animation: khan 5s   linear forwards; */
+            margin-left: 1000px;
+            margin-top: -100px;
+            border-radius: 50%;
+
+        }
+        @keyframes khan {
+            0%{
+                transform: translateX(0px);
+                background-image: url(image/img/m7.jpg);
+                transition: 4s;
+                animation-delay: 5s;
+
+            }
+               25%{
+                transform: translateX(0px);
+                background-image: url(image/img/m1.jpg);
+                transition: 3s;
+                animation-delay: 5s;
+                
+            }
+              50%{
+                transform: translateX(0px);
+                background-image: url(image/img/m10.jpg);
+                transition: 4s;
+                animation-delay: 5s;
+                
+            }
+              75%{
+                transform: translateX(0px);
+                background-image: url(image/img/m9.jpg);
+                transition: 4s;
+                animation-delay: 5s;
+                
+            }
+             100%{
+                transform: translateX(0px);
+                background-image: url(image/img/m5.jpg);
+                transition: 5s;
+                animation-delay: 5s;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    
+        <nav class="nav">
+                        <div class="navgation container">
+            <div class="logo container" id="logo">
+                <img src="image/img/logo1.jpg" alt="" width="80px">
+            </div>
+            <div class="ser">
+                <input type="search" name="" id="">
+            </div>
+            <!-- <div class="bar_icon">
+                <img src="image/img/home.png" alt="" width="40px">
+            </div> -->
+            <ul class="n">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="service.html">SERVICE</a></li>
+                <li><a href="setting.html">SETTING</a></li>
+                <li><a href="porduct.html">PRODUCT</a></li>
+            </ul>
+        </div>
+    </nav>
+  <div class="aab">
+<button onclick="meun.hidden^=1" id="b">&#9776</button>
+    <nav id="meun" hidden class="nn">
+        <ul id="a">
+            <li><a href="home.html" class="col">HOME</a></li>
+            <li><a href="" class="col">ABOUT</a></li>
+            <li><a href="service.html" class="col">SERVICE</a></li>
+            <li><a href="setting.html" class="col">SETTING</a></li>
+            <li><a href="porduct.html" class="col">PRODUCT</a></li>
+        </ul>
+        </nav>
+
+
+
+    <div class="hero">
+        <h1>DELICIOUS FOODS FOR THIS RESTAURANT</h1>
+        <div class="hero1">
+            <!-- <img src="image/img/m7.jpg" alt=""> -->
+
+        </div>
+        <button onclick="khan()" id="btn">GET START</button>
+
+    </div>
+
+    </div>
+
+
+   
+    <div id="container"></div>
+    <p id="result" class="pp"></p>
+    <p id="result1" class="pp"></p>
+    <p id="result2" class="pp"></p>
+    <p id="result3" class="pp"></p>
+    <p id="result4" class="pp"></p>
+    <p id="result5" class="pp"></p>
+    <p id="result6" class="pp"></p>
+    
+   <!-- <img src="image/img/m3.jpg"> -->
+    
+   <div class="off">
+    50% off
+</div>
+   <footer class="footer">
+    <div class="footer-column">
+        <h3>ABOUT</h3>
+<ul>
+    <li><a href="#">OUR STORY</a></li>
+    <li><a href="#">TEAM</a></li>
+    <li><a href="#">CAREERS</a></li>
+   
+</ul>
+</div>
+<div class="footer-column">
+<h3>SERVICE</h3>
+<ul>
+<li><a href="#">DEVEIOPMENT</a></li>
+<li><a href="#">WEB DESIGN</a></li>
+<li><a href="#">VISIT US</a></li>
+
+</ul>
+</div>
+<div class="footer-column">
+<h3>CONTACT US</h3>
+<ul>
+<li><a href="#">EMIL</a></li>
+<li><a href="#">CALL</a></li>
+<li><a href="#">VISIT US</a></li>
+
+</ul>
+</div>
+<div class="footer-column">
+<h3>FOLLOW</h3>
+<ul>
+<li><a href="#">INSTAGRAM</a></li>
+<li><a href="#">FACEBOOK</a></li>
+<li><a href="#">TWITTER</a></li>
+
+</ul>
+</div>
+</footer> 
+    <script>
+        function khan() {
+
+            // <img src='image/img/m8.jpg' width='200px' height='132px'>
+
+ let a =document.getElementById('result').innerHTML="<div id ='first' class='on'><h2>CHICDEN KARAHI </h2> </div>  <div id ='second' class='on'><h2>VEGE TABLE</h2> </div> <div id ='third' class='on'> <h2>CHAPLI KABAB</h2><div id ='four' class='on'> <h2>SAND WICH</h2><div id ='six' class='on'> ";
+  
+        }
+    </script>
+</body>
+</html>

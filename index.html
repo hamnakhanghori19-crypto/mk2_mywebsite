@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Blur Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: url('https://images.unsplash.com/photo-1503264116251-35a269479413') no-repeat center/cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .form-container {
+        background: rgba(255, 255, 255, 0.15);
+        padding: 30px 40px;
+        border-radius: 15px;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+        width: 320px;
+        color: #fff;
+    }
+
+    .form-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .input-group {
+        margin-bottom: 15px;
+    }
+
+    .input-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+
+    .input-group input {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 8px;
+        outline: none;
+        background: rgba(255,255,255,0.2);
+        color: white;
+    }
+
+    .input-group input::placeholder {
+        color: #eee;
+    }
+
+    .input-group input:focus {
+        background: rgba(255,255,255,0.3);
+    }
+
+    .btn {
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 8px;
+        background: rgba(255,255,255,0.3);
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+    }
+</style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Register</h2>
+    <form>
+        <div class="input-group">
+            <label>Name</label>
+            <input type="text" id='name' placeholder="Enter your name">
+        </div>
+        <div class="input-group">
+            <label>Password</label>
+            <input type="password" id="password" placeholder="Enter your password">
+        </div>
+
+        <button type="button" class="btn" onclick="khan()">Submit</button>
+    </form>
+</div>
+<script>
+    function khan() {
+        let name= document.getElementById('name').value;
+        let pass= document.getElementById('password').value;
+        if (name =='mehmood' && pass =='12345') {
+            window.location.href = 'home.html';
+        }
+        else{
+            alert('you are not admit');
+        }
+    }
+</script>
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Beautiful Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .form-container {
+        background: white;
+        padding: 30px 40px;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        width: 320px;
+    }
+
+    .form-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .input-group {
+        margin-bottom: 15px;
+    }
+
+    .input-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 14px;
+        color: #555;
+    }
+
+    .input-group input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        outline: none;
+        transition: 0.3s;
+    }
+
+    .input-group input:focus {
+        border-color: #667eea;
+        box-shadow: 0 0 5px rgba(102,126,234,0.5);
+    }
+
+    .btn {
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 8px;
+        background: #667eea;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: #5a67d8;
+    }
+</style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Register</h2>
+    <form>
+        <div class="input-group">
+            <label>Name</label>
+            <input type="text" placeholder="Enter your name">
+        </div>
+
+        <div class="input-group">
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email">
+        </div>
+
+        <div class="input-group">
+            <label>Password</label>
+            <input type="password" placeholder="Enter your password">
+        </div>
+
+        <button class="btn">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
+
+-->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;margin: 0;
+        }
+        body{
+            justify-content: center;
+            text-align: center;
+            padding-top: 50px;
+        }
+        form{
+            background:;
+            width: 450px;
+            text-align: center;
+            justify-content: center;
+            margin-left: 32%;
+            padding: 20px;
+            
+        }
+        label{
+            font-size: 25px;
+            font-weight: bold;
+        }
+        input{
+            height: 28px;
+            width: 200px;
+            text-align: center;
+            margin: auto;
+        }
+        button{
+            padding: 10px 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="">NAME</label>
+        <input type="text" name="name" id="">
+        <br>
+        <br>
+        <label for="">PASSWORD</label>
+        <input type="password" name="password" id="">
+        <br>
+        <br>
+        <button>CLICK</button>
+    </form>
+</body>
+</html> --> -->

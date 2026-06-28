@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        input {
+            display: block;
+            width: 400px;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            height: 20px;
+            font-size: large;
+            /* background-color: cornflowerblue; */
+        }
+        .image{
+    border-radius: 10px;
+}
+        label {
+            font-size: 30px;
+            color: white;
+        }
+
+        button {
+            padding: 10px 35px;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color:  rgb(163, 145, 145);
+    color: black;
+    font-size: large;
+    text-decoration: none;
+    font-weight: 900;
+        }
+
+        button:hover {
+            background-color: blueviolet;
+            color: black;
+            font-size: 20px;
+
+
+        }
+
+        :-ms-input-placeholder {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <img src="image/img/baba2.jpg" alt="" width="200px" height="250px" class="image">
+        <br>
+        <br>
+        <label for="">enter your name</label>
+        <input type="text" id="name" placeholder="enter your name">
+        <br>
+        <br>
+        <label for="">enter your age</label>
+        <input type="text" id="age" placeholder="enter your age">
+        <br>
+        <br>
+        <button onclick="clickme()">Click</button>
+        <p id="result"></p>
+        
+<script>
+ 
+
+</script>
+    </center>
+    <script>
+        
+      
+        function clickme() {
+         
+
+            let age = document.getElementById("age").value;
+            let name = document.getElementById("name").value;
+
+            let random = Math.floor(Math.random() * 4) + 1;
+            let message = "";
+            document.write('<center><img src="image/img/baba2.jpg"></center>')
+            if (age >= 5 && age <= 15) {
+                if (random === 1) {
+                    message = "you are first kid";
+
+                } else if (random === 2) {
+                    message = " you are second kid";
+
+                } else if (random === 3) {
+                    message = "  you are third kid";
+
+                } else if (random === 4) {
+                    message = " you are four kid";
+
+                }
+                else {
+                    message = "not valid";
+
+                }
+            }
+            if (age >= 16 && age <= 30) {
+                if (random === 1) {
+                    message = "you are first sibling";
+
+                } else if (random === 2) {
+                    message = " you are second sibling";
+
+                } else if (random === 3) {
+                    message = "  you are third sibling";
+
+                } else if (random === 4) {
+                    message = " you are four sibling";
+
+                }
+                else {
+                    message = "not valid";
+
+                }
+            }
+            if (age >= 31 && age <= 50) {
+                if (random === 1) {
+                    message = "you are first uncle";
+
+                } else if (random === 2) {
+                    message = " you are second uncle";
+
+                } else if (random === 3) {
+                    message = "  you are third uncle";
+
+                } else if (random === 4) {
+                    message = " you are four uncle";
+
+                }
+                else {
+                    message = "not valid";
+
+                }
+            }
+            
+           
+            document.write("<center>");
+
+            document.write("  <div id='name'>NAME :" +  " "+name +"</div>");
+      
+            document.write("<br>");
+            document.write("  <div id='age'> AGE :" + " "+age +"</div>");
+                document.write("<div id='box'>"+message+"</div>");
+              let khan =  document.getElementById( "box");
+              let a =  document.getElementById( "name");
+              let b =  document.getElementById( "age");
+              khan.style.backgroundColor="red"
+              khan.style.padding="5px"
+              khan.style.width="200px"
+              khan.style.fontSize="20px"
+              khan.style.color="white   "
+              a.style.backgroundColor="blue "
+              a.style.display="inline "
+              a.style.color="white  "
+              a.style.padding="5px 10px "
+              b.style.display="inline "
+              b.style.backgroundColor="yellow "
+            
+            document.write("</center>");
+document.body.style.backgroundColor=' silver';
+
+        }
+ 
+    </script>
+</body>
+
+</html>

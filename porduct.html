@@ -1,0 +1,342 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cards</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Har card ek page */
+.card {
+    width: 100%;
+    height: 100vh;
+    page-break-after: always; /* print ke liye */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card design */
+.card-content {
+    width: 300px;
+    height: 180px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+h2 {
+    margin: 10px 0;
+}
+
+p {
+    margin: 5px 0;
+}
+
+/* Print optimization */
+@media print {
+    body {
+        margin: 0;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<div class="card">
+    <div class="card-content">
+        <h2>Ali</h2>
+        <p>Age: 20</p>
+        <p>ID: 001</p>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-content">
+        <h2>Sara</h2>
+        <p>Age: 22</p>
+        <p>ID: 002</p>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-content">
+        <h2>Ahmed</h2>
+        <p>Age: 25</p>
+        <p>ID: 003</p>
+    </div>
+</div>
+
+</body>
+</html> -->
+
+
+<!-- Card 3 -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ID Cards</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Har card ek page */
+.card {
+    width: 100%;
+    height: 100vh;
+    page-break-after: always;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card design */
+.card-content {
+    width: 320px;
+    height: 200px;
+    border: 2px solid #333;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Image styling */
+.card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #555;
+}
+
+/* Text */
+.info h2 {
+    margin: 0;
+}
+
+.info p {
+    margin: 4px 0;
+    font-size: 14px;
+}
+
+/* Print */
+@media print {
+    body {
+        margin: 0;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<div class="card">
+    <div class="card-content">
+        <img src="image/img/m8.jpg" alt="Photo">
+        <div class="info">
+            <h2></h2>
+            <p>Age: 20</p>
+            <p>ID: 001</p>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-content">
+        <img src="image/img/m8.jpg" alt="Photo">
+        <div class="info">
+            <h2>Sara</h2>
+            <p>Age: 22</p>
+            <p>ID: 002</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;margin: 0;
+            box-sizing: border-box;
+        }
+         body{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: rgb(0, 0, 0);
+
+       }
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    .card{
+        background-color: rgb(156, 149, 149);
+        border-radius: 18px;
+        width: 100%;
+        max-width: 300px;
+        padding: 20px;
+        text-align: center;
+        max-height: 400px;
+    }
+       .card img{
+        width: 100%;
+        border-radius: 8px;
+       } 
+       .card h3{
+        margin: 10px 0;
+        font-size: 1.2rem;
+       }
+       .card p{
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 15px;
+        background-color: red;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+
+       }
+       .card  button{
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        margin-top: 5px;
+       }
+       .card button:hover{
+        background-color: rgb(255, 255, 255) ;
+        color: rgb(0, 0, 0);
+       }
+
+
+
+       .hero1{
+            width: 100%;
+            height: 110vh;
+            border: 5px solid white;
+            background-size: cover;
+            background-position: center;
+            animation: khan 5s   infinite alternate;
+            /* animation: khan 5s   linear forwards; */
+            /* margin-left: 1000px; */
+            /* margin-top: -100px; */
+            /* border-radius: 50%; */
+            padding-top: 10px;
+
+        }
+        @keyframes khan {
+            0%{
+                transform: translateX(0px);
+                background-image: url(image/img/m7.jpg);
+                transition: 4s;
+                animation-delay: 5s;
+
+            }
+               25%{
+                transform: translateX(0px);
+                background-image: url(image/img/m1.jpg);
+                transition: 3s;
+                animation-delay: 5s;
+                
+            }
+              50%{
+                transform: translateX(0px);
+                background-image: url(image/img/m10.jpg);
+                transition: 4s;
+                animation-delay: 5s;
+                
+            }
+              75%{
+                transform: translateX(0px);
+                background-image: url(image/img/m9.jpg);
+                transition: 4s;
+                animation-delay: 5s;
+                
+            }
+             100%{
+                transform: translateX(0px);
+                background-image: url(image/img/m5.jpg);
+                transition: 5s;
+                animation-delay: 5s;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero1">
+     <center>    <H1 style=" color:rgb(255, 255, 255) ; margin-bottom: 10px; font-family:  Helvetica, sans-serif;">PRODUCT SECTION</H1></center>
+    <div class="container">
+        <div class="card">
+            <img src="image/img/m8.jpg" alt=""  width="200px" height="200px">
+            <h2>this is soup</h2>
+            <button>READ MORE</button>
+        </div>
+        <div class="card">
+            <img src="image/img/m5.jpg" alt="" width="200px" height="200px">
+            <h2>this is burger</h2>
+            <button>READ MORE</button>
+        </div>
+        <div class="card">
+            <img src="image/img/m7.jpg" alt="" width="200px" height="200px">
+            <h2>this is vagetable</h2>
+            <button>READ MORE</button>
+        </div>
+        <div class="card">
+            <img src="image/img/m3.jpg" alt="" width="200px"  height="200px">
+            <h2>this is card</h2>
+            <button>READ MORE</button>
+        </div>
+
+        <div class="card">
+            <img src="image/img/m2.jpg" alt="" width="200px"  height="200px">
+            <h2>this is card</h2>
+            <button>READ MORE</button>
+        </div>
+
+        <div class="card">
+            <img src="image/img/m1.jpg" alt="" width="200px"  height="200px">
+            <h2>this is card</h2>
+            <button>READ MORE</button>
+        </div>
+        <div class="card">
+            <img src="image/img/w1.jpg" alt="" width="200px"  height="200px">
+            <h2>this is card</h2>
+            <button>READ MORE</button>
+        </div>
+
+        <div class="card">
+            <img src="image/img/m9.jpg" alt="" width="200px"  height="200px">
+            <h2>this is card</h2>
+            <button>READ MORE</button>
+        </div>
+
+        
+    </div>
+    </center> 
+</div>
+</body>
+</html>
